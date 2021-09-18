@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<HBox fx:id="registerNode" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="com.geekbrains.client.controllers.RegistrationWindowController">
+    <VBox alignment="CENTER">
+        <Label fx:id="registrationInfoLabel" HBox.hgrow="ALWAYS"/>
+        <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+            <TextField fx:id="nicknameTextFieldReg"  HBox.hgrow="ALWAYS" promptText="Nickname"/>
+            <TextField fx:id="loginTextFieldReg" HBox.hgrow="ALWAYS" promptText="Login"/>
+            <TextField fx:id="passwordTextFieldReg" HBox.hgrow="ALWAYS" promptText="Password"/>
+        </HBox>
+        <HBox HBox.hgrow="ALWAYS">
+            <VBox HBox.hgrow="ALWAYS" alignment="BOTTOM_LEFT">
+                <Button fx:id="backToLoginButton" text="back" />
+            </VBox>
+            <VBox HBox.hgrow="ALWAYS" alignment="BOTTOM_RIGHT">
+                <Button fx:id="registrationButton" text="Registration" />
+            </VBox>
+        </HBox>
+    </VBox>
+</HBox>

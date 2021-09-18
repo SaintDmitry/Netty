@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<HBox fx:id="loginNode" alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="com.geekbrains.client.controllers.LoginWindowController">
+    <VBox alignment="CENTER">
+        <Label fx:id="loginInfoLabel"  HBox.hgrow="ALWAYS"/>
+        <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+            <TextField fx:id="loginTextField" HBox.hgrow="ALWAYS" promptText="Login"/>
+            <TextField fx:id="passwordTextField" HBox.hgrow="ALWAYS" promptText="Password"/>
+        </HBox>
+        <HBox HBox.hgrow="ALWAYS">
+            <VBox HBox.hgrow="ALWAYS" alignment="BOTTOM_LEFT">
+                <Button fx:id="loginButton" alignment="BOTTOM_LEFT" text="Login"/>
+            </VBox>
+            <VBox HBox.hgrow="ALWAYS" alignment="BOTTOM_RIGHT">
+                <Button fx:id="goToRegistrationButton" alignment="BOTTOM_RIGHT" text="Registration" />
+            </VBox>
+        </HBox>
+    </VBox>
+</HBox>

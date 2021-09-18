@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Label?>
+<VBox fx:id="rootNode" alignment="CENTER" prefHeight="400" prefWidth="600"
+      style="-fx-background-color: linear-gradient(#fff 0%, #eee 10%, #ddd 90%, #bbb 100%);"
+      xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.172-ea"
+      fx:controller="com.geekbrains.client.controllers.ClientController">
+
+    <HBox>
+        <VBox HBox.hgrow="ALWAYS" alignment="CENTER">
+            <Label fx:id="clientNicknameFilesLabel" style="-fx-font-size:20"/>
+            <Label fx:id="clientBreadcrumbsLabel" style="-fx-font-size:10"/>
+            <ListView fx:id="clientFilesList" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS"/>
+        </VBox>
+        <VBox HBox.hgrow="ALWAYS" alignment="CENTER">
+            <Label fx:id="serverFilesLabel" style="-fx-font-size:20"/>
+            <Label fx:id="serverBreadcrumbsLabel" style="-fx-font-size:10"/>
+            <ListView fx:id="serverFilesList" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS"/>
+        </VBox>
+    </HBox>
+</VBox>

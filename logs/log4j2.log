@@ -1,0 +1,3 @@
+2021-08-14 01:04:05,420 INFO asdasdas [nioEventLoopGroup-3-1] Client authentication successful, nickname: user1 
+2021-08-14 01:05:09,639 ERROR c.g.s.MainHandler [nioEventLoopGroup-3-2] exceptionCaught error: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение 
+2021-08-14 01:10:29,383 INFO c.g.s.d.DBRequestHandler [nioEventLoopGroup-3-1] Client authentication successful, nickname: user1 
